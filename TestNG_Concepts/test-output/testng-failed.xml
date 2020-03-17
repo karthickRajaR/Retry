@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [My Suite]">
+  <listeners>
+    <listener class-name="com.run.failedTests.RetryListenerTests"/>
+  </listeners>
+  <test thread-count="5" name="Test1(failed)">
+    <classes>
+      <class name="com.run.failedTests.TestClass1">
+        <methods>
+          <include name="test2"/>
+          <include name="closeBrowser"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- com.run.failedTests.TestClass1 -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [My Suite] -->
